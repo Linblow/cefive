@@ -62,7 +62,7 @@ ASFLAGS = $(CFLAGS)
 
 LIBDIR =
 LIBS = -lpspdebug -lpspge_driver
-LDFLAGS = -nostartfiles -mno-crt0 -g
+LDFLAGS = -nostartfiles -g
 
 PSPSDK=$(shell psp-config --pspsdk-path)
 include $(PSPSDK)/lib/build.mak

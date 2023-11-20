@@ -389,8 +389,8 @@ static void showInterface() {
     sceDisplaySetFrameBufferInternal(0, prUi->vram, 512, 
             PSP_DISPLAY_PIXEL_FORMAT_565, PSP_DISPLAY_SETBUF_NEXTFRAME);
     pspDebugScreenInitEx(prUi->vram, 0, 0);
-    pspDebugScreenSetMaxX(69);
-    pspDebugScreenSetMaxY(34);
+    // pspDebugScreenSetMaxX(69);
+    // pspDebugScreenSetMaxY(34);
     pspDebugScreenClearLineDisable();
     prUi->running = 1;
     geelog_log(LOG_DEBUG, 
